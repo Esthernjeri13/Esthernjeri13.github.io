@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>Esther Njeri Mungai</h1>
+        <p>Software Engineer</p>
+        
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a driven Software Engineering student with a passion for coding, problem-solving, and developing innovative tech solutions. Proficient in languages like Python, Java, and C++, I have hands-on experience in building software, collaborating on projects, and using tools like version control. My interest lies in web development, mobile apps, and artificial intelligence, where I aim to create impactful solutions that address real-world challenges. I am always eager to learn, adapt, and contribute to projects that push the boundaries of technology, while honing my creativity and technical skills.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Web Development</li>
+            <li>Responsive Design</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C++></li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
